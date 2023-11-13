@@ -17,7 +17,7 @@ body {
 }
 
 .card {
-    border: none;
+    border-style: none;
     background-color: transparent;
 }
 
@@ -27,10 +27,10 @@ body {
 
 .image-flash {
     position: absolute;
-    bottom: 5%;
+    top: 0%;
     min-width: 30%;
     left: -2px;
-    background-color: #23BBBB;
+    background-color: #000000;
 }
 
 .author {
@@ -67,10 +67,6 @@ body {
     height: 100%;
     width: 150%;
     background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
 }
 
 .post-link {
@@ -80,7 +76,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: lightseagreen;
 }
 
 .post-title {
@@ -90,18 +86,20 @@ body {
 
 .post-subtitle {
     margin-left: 5%;
-    color: lightgray;
+    color: rgb(0, 0, 0);
 }
 
 .btn-signup {
-    background-color: #23BBBB;
+    background-color: #445261;
     color: #fff;
+    margin-top: 2%;
+    margin-right: 10%;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
+    background-color: black;
+    color: white;
 }
 
 .link {
@@ -115,15 +113,3 @@ body {
     text-decoration: underline;
 }
 
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #E84610;
-    background: transparent;
-    border: none;
-}
