@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from django.views import generic, view
+from django.views import generic, View
 from .models import Post
 
 
@@ -10,7 +10,7 @@ class PostList(generic.ListView):
     paginate_by = 6
 
 
-    class PostDetail(View):
+class PostDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
