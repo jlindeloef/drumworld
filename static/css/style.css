@@ -9,7 +9,7 @@ body {
 }    
 
 .navbar {
-    background-color: #e4b55f; 
+    background-color: #f7dca9; 
     font-size: 30px; 
     font-family: 'Lato', "sans-serif";  
 }
@@ -19,7 +19,7 @@ body {
 }
 
 .main-bg {
-    background-color: #f0ddb4;
+    background-color: #fff3da;
 }
 
 .card {
@@ -74,6 +74,9 @@ body {
     height: 100%;
     width: 150%;
     background: #445261;
+}
+.comments {
+    box-shadow: none;
 }
 
 .post-link {
