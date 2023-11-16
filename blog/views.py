@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from .models import Post
 from .forms import CommentForm
-
+from django.views.generic import ListView
 
 class PostList(generic.ListView):
     model = Post
@@ -63,3 +63,16 @@ class PostDetail(View):
                 "liked": liked
             },
         )
+
+class CatListView(ListView):
+    template_name = 'category.html'
+    context_object_name = 'catlist'
+
+    def get_queryset(self):
+        content = {
+            'cat': self.kwargs['category'],
+            'posts': Post.objects.filter(
+                category__name=self.kwargs['category']).filter(status='published')
+        }
+        return content
+
