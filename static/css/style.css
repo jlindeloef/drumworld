@@ -50,6 +50,10 @@ body {
     text-transform: uppercase;
 }
 
+.dark-bg {
+    background-color: lightseagreen;
+}
+
 .masthead {
     margin-top: 10px;
     overflow: hidden;
