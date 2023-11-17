@@ -28,7 +28,7 @@ body {
 
 .card {
     border: none;
-    box-shadow: 2px 5px;
+   /* box-shadow: 2px 5px; */
     background-color: transparent;
 }
 
