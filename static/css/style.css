@@ -128,10 +128,12 @@ body {
 }
 
 .btn-signup {
-    background-color: #445261;
-    color: #fff;
+    background-color: lightseagreen;
+    color: #000000;
+    border: solid;
     margin-top: 2%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-bottom: 42%;
 }
 
 .btn-signup:hover,
