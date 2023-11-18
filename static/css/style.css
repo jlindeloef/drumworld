@@ -54,11 +54,12 @@ body {
     text-transform: uppercase;
 }
 
-.dark-bg {
+
+.footer {
     background-color: lightseagreen;
 }
 
-#contact-us {
+#visit-us {
     font-family: 'lato', sans-serif;
     font-size: x-large;
     text-align: center;
@@ -66,16 +67,18 @@ body {
 
 #social-networks {
     text-align: center;
-    padding: 20px 0;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
+    
 }
 
 #social-networks i {
-    font-size: 200%;
+    font-size: 150%;
     padding: 2%;
     color: black;
+    
+    
 }
 
 .masthead {
@@ -141,7 +144,7 @@ body {
     border: solid;
     margin-top: 2%;
     margin-left: 15%;
-    margin-bottom: 42%;
+    margin-bottom: 70%;
 }
 
 .btn-signup:hover,
