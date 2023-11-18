@@ -40,7 +40,7 @@
           </li>
           {% else %}
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+            <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'account_login' %}">Login</a>
@@ -81,9 +81,9 @@
 
   </main>
   <!--Footer-->
-  <footer class="footer mt-auto py-3 dark-bg">
+  <footer class="footer mt-auto py-3 dark-bg navbar-fixed-bottom">
     <!--contact us-->
-    <section>
+    <div class = "container">
       <div id="contact-us">
         <h4>Contact Us</h4>
         <h6>
@@ -115,6 +115,7 @@
             <i class="fa-brands fa-youtube"></i></a>
         </li>
       </ul>
+    <div>
   </footer>
   <script>
     setTimeout(function () {

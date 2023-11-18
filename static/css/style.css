@@ -131,6 +131,10 @@ body {
     color: rgb(0, 0, 0);
 }
 
+.signup {
+    color: rgb(0, 0, 0);
+}
+
 .btn-signup {
     background-color: lightseagreen;
     color: #000000;
@@ -147,7 +151,7 @@ body {
 }
 
 .link {
-    color: #23BBBB;
+    color: lightseagreen;
     text-decoration: none;
 }
 
@@ -169,4 +173,5 @@ body {
     background: transparent;
     border: none;
 }
+
 
