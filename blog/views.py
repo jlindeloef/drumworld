@@ -4,7 +4,9 @@ from .models import Post, Category
 from .forms import CommentForm
 from django.views.generic import ListView
 from django.http import HttpResponseRedirect
-from django.views.generic.edit import UpdateView, DeleteView
+
+
+
 
 
 class PostList(generic.ListView):
@@ -33,7 +35,7 @@ class PostDetail(View):
                 "commented": False,
                 "liked": liked,
                 "comment_form": CommentForm()
-            },
+            }, 
         )
     
     def post(self, request, slug, *args, **kwargs):
@@ -99,6 +101,9 @@ def category_list(request):
         "category_list": category_list,
     }
     return context
+
+
+
 
 
 
