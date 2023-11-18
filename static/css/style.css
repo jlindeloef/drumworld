@@ -22,7 +22,7 @@ body {
 }
 
 .main-bg {
-    background-color: #f1efe9;
+    background-color: #ffffff;
 }
 
 .card {
@@ -30,6 +30,7 @@ body {
     /* box-shadow: 2px 5px; */
     background-color: transparent;
 }
+
 
 .card-img-top {
     height: 300px;
@@ -76,8 +77,6 @@ body {
     font-size: 150%;
     padding: 2%;
     color: black;
-
-
 }
 
 .masthead {
@@ -138,13 +137,21 @@ body {
     color: rgb(0, 0, 0);
 }
 
+.helptext {
+    visibility: hidden;
+}
+
+.requiredField {
+    visibility: hidden;
+}
+
 .btn-signup {
     background-color: lightseagreen;
     color: #000000;
     border: solid;
     margin-top: 2%;
     margin-left: 15%;
-    margin-bottom: 70%;
+    margin-bottom: 75%;
 }
 
 .btn-signup:hover,
