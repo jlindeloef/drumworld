@@ -4,8 +4,8 @@ from .models import Post, Category
 from .forms import CommentForm
 from django.views.generic import ListView
 from django.http import HttpResponseRedirect
-
-
+from .models import Post, Comment
+from .forms import CommentForm
 
 
 
