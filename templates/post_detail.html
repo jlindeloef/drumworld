@@ -89,11 +89,11 @@
                 <form method="post" style="margin-top: 1.3em;">
                     {{ comment_form | crispy }}
                     {% csrf_token %}
-                <ul>
+                <div>
                     <button type="submit" class="btn btn-signup btn-lg">Submit</button>
-                    <button type="submit" class="btn btn-signup btn-lg">Submit</button>
-                    <button type="submit" class="btn btn-signup btn-lg">Submit</button>
-                </ul>
+                    <a href="" class="btn btn-signup btn-lg"><i class="far fa-edit"></i></a>
+                    <a href="" class="btn btn-signup btn-lg" style="color: #fc0000;"><i class="fas fa-trash"></i></a>
+                </div>
                 </form>
                 {% endif %}
                 {% endif %}
