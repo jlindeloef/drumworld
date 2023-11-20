@@ -153,6 +153,15 @@ body {
     margin-bottom: 75%;
 }
 
+.btn-edit,
+.btn-delete {
+    border: none;
+    background-color: white;
+    margin-bottom: 0px;
+    font-size: smaller;
+    margin-left: 0%;
+}
+
 .btn-signup:hover,
 .btn-signup:active {
     background-color: black;
