@@ -103,14 +103,9 @@ def category_list(request):
 
 
 class CommentUpdateView(UpdateView): 
-    # specify the model you want to use 
     model = Comment
     form_class = CommentForm
     template_name = "edit_comment"
-    # specify the fields 
-    # can specify success url 
-    # url to redirect after successfully 
-    # updating details 
     success_url = '/post_detail/'
 
 

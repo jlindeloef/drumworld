@@ -71,7 +71,7 @@
                         <span class=" text-muted font-weight-normal">
                             {{ comment.created_on }}
                             <br>
-                            <a href="" class="btn btn-signup btn-lg btn-edit"><i class="far fa-edit"></i></a>
+                            <a href="{% url 'edit_comment' comment.id %}" class="btn btn-signup btn-lg btn-edit"><i class="far fa-edit"></i></a>
                             <a href="" class="btn btn-signup btn-lg btn-delete" style="color: #fc0000;"><i
                                     class="fas fa-trash"></i></a>
                         </span>
