@@ -1,11 +1,10 @@
 from django.shortcuts import render, get_object_or_404, reverse
+from django.views.generic.edit import UpdateView
 from django.views import generic, View
-from .models import Post, Category
+from .models import Post, Category, Comment
 from .forms import CommentForm
-from django.views.generic import ListView, UpdateView
+from django.views.generic import ListView
 from django.http import HttpResponseRedirect
-from .models import Post, Comment
-from .forms import CommentForm
 
 
 
@@ -101,6 +100,22 @@ def category_list(request):
         "category_list": category_list,
     }
     return context
+
+
+class CommentUpdateView(UpdateView): 
+    # specify the model you want to use 
+    model = Comment
+    form_class = CommentForm
+    template_name = "edit_comment"
+    # specify the fields 
+    # can specify success url 
+    # url to redirect after successfully 
+    # updating details 
+    success_url = '/post_detail/'
+
+
+
+
 
     
 
