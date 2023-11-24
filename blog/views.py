@@ -105,13 +105,13 @@ def category_list(request):
 class CommentUpdateView(UpdateView): 
     model = Comment
     form_class = CommentForm
-    template_name = "edit_comment"
+    template_name = "edit_comment.html"
     success_url = '/post_detail/'
 
 
 class CommentDeleteView(DeleteView):
     model = Comment
-    template_name = 'delete_comment'
+    template_name = 'delete_comment.html'
     success_url = '/post_detail/'
     
     def form_valid(self, form):
