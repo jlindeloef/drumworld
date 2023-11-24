@@ -63,20 +63,20 @@
     <!-- The comment section-->
     <div class="row">
         <div class="col-md-12 card mb-4  mt-3" class="comments">
+            <h3>Comments:</h3>
             <div class="card-body">
                 {% for comment in comments %}
-                <div class="comments" style="padding: 10px;">
+                <div class="comments-done" style="padding: 10px;">
                     <p class="font-weight-bold">
                         {{ comment.name }}
                         <span class=" text-muted font-weight-normal">
-                            {{ comment.created_on }}
-                            <br>
-                            <a href="{% url 'edit_comment' comment.id %}" class="btn btn-signup btn-lg btn-edit"><i class="far fa-edit"></i></a>
-                            <a href="{% url 'delete_comment' comment.id %}" class="btn btn-signup btn-lg btn-delete" style="color: #fc0000;"><i
-                                    class="fas fa-trash"></i></a>
+                            {{ comment.created_on }}               
                         </span>
                     </p>
                     {{ comment.body | linebreaks }}
+                    <a href="{% url 'edit_comment' comment.id %}" class="btn btn-signup btn-lg btn-edit"><i class="far fa-edit"></i></a>
+                    <a href="{% url 'delete_comment' comment.id %}" class="btn btn-signup btn-lg btn-delete" style="color: #fc0000;"><i
+                            class="fas fa-trash"></i></a>
                 </div>
                 {% endfor %}
             </div>
