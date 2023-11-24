@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, reverse
-from django.views.generic.edit import UpdateView
+from django.views.generic.edit import UpdateView, DeleteView
 from django.views import generic, View
 from .models import Post, Category, Comment
 from .forms import CommentForm
@@ -107,6 +107,17 @@ class CommentUpdateView(UpdateView):
     form_class = CommentForm
     template_name = "edit_comment"
     success_url = '/post_detail/'
+
+
+class CommentDeleteView(DeleteView):
+    model = Comment
+    template_name = 'delete_comment'
+    success_url = '/post_detail/'
+    
+    def form_valid(self, form):
+        messages.success(self.request, "The task was deleted successfully.")
+        return super(CommentDeleteView,self).form_valid(form)
+
 
 
 

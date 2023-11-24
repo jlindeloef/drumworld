@@ -47,6 +47,11 @@ body {
     background-color: #000000;
 }
 
+.comments {
+    border: solid;
+    border-color: lightgray;
+}
+
 .author {
     color: white;
     margin: 4px;
