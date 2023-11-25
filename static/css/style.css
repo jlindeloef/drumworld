@@ -70,7 +70,8 @@ body {
 #visit-us {
     font-family: 'lato', sans-serif;
     font-size: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 #social-networks {
@@ -78,8 +79,8 @@ body {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-   
-
+    margin-top: 15px;
+    margin-bottom: 0px;
 }
 
 #social-networks i {
