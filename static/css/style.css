@@ -25,6 +25,24 @@ body {
     background-color: #ffffff;
 }
 
+#id_username,
+#id_password1,
+#id_email,
+#id_password2,
+#id_login,
+#id_password {
+ /*   margin-left: 38px;*/
+    border-radius: 25px;
+    padding: 20px; 
+    width: 200px;
+    height: 10px; 
+    width: 100%;
+}
+
+.signup > ul {
+    font-size: 12px;
+}
+
 .card {
     border: none;
     /* box-shadow: 2px 5px; */
