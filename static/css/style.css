@@ -200,6 +200,10 @@ body {
     border-color: red;
 }
 
+.btn-signup {
+    margin-bottom: 15px;
+}
+
 .btn-signup:hover,
 .btn-signup:active {
     background-color: black;
