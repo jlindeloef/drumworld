@@ -193,6 +193,13 @@ body {
     margin-top: 0px;
 }
 
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: black;
+    color: white;
+    border-color: red;
+}
+
 .btn-signup:hover,
 .btn-signup:active {
     background-color: black;
