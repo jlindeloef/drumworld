@@ -74,9 +74,17 @@
                         </span>
                     </p>
                     {{ comment.body | linebreaks }}
-                    <a href="{% url 'edit_comment' comment.id %}" class="btn btn-signup btn-lg btn-edit"><i class="far fa-edit"></i></a>
-                    <a href="{% url 'delete_comment' comment.id %}" class="btn btn-signup btn-lg btn-delete" style="color: #fc0000;"><i
-                            class="fas fa-trash"></i></a>
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'edit_comment' comment.id %}" class="btn btn-signup btn-lg btn-edit"><i class="far fa-edit"></i></a>
+                        <a href="{% url 'delete_comment' comment.id %}" class="btn btn-signup btn-lg btn-delete" style="color: #fc0000;"><i
+                                class="fas fa-trash"></i></a>
+                                {% else %}
+                                <div class="alert alert-success" id="" role="alert">
+                                   To edit or delete your comments you need to <a class="link"
+                                    href="{% url 'account_login' %}">sign in</a>!
+                                </div>
+                                    
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
