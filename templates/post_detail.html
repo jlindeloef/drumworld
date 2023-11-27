@@ -61,6 +61,27 @@
         </div>
     </div>
     <!-- The comment section-->
+    <div class="col-md-8 card mb-4  mt-3 comments">
+        <div class="card-body">
+            <!--Alert-->
+            {% if commented %}
+            <div class="alert alert-success" id="msg" role="alert">
+                Your comment is awaiting approval
+            </div>
+            {% else %}
+            {% if user.is_authenticated %}
+
+            <h3>Comment:</h3>
+            <p>Posting as: {{ user.username }}</p>
+            <form method="post" style="margin-top: 1em;">
+                {{ comment_form | crispy }}
+                {% csrf_token %}
+                <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+            </form>
+            {% endif %}
+            {% endif %}
+        </div>
+    </div>
     <div class="row">
         <div class="col-md-12 card mb-4  mt-3" class="comments">
             <h3>Comments:</h3>
@@ -70,44 +91,27 @@
                     <p class="font-weight-bold">
                         {{ comment.name }}
                         <span class=" text-muted font-weight-normal">
-                            {{ comment.created_on }}               
+                            {{ comment.created_on }}
                         </span>
                     </p>
                     {{ comment.body | linebreaks }}
+                    <div class="col-md-2 card mb-0  mt-0">
+                        <hr>
+                    </div>
                     {% if user.is_authenticated %}
-                        <a href="{% url 'edit_comment' comment.id %}" class="btn btn-signup btn-lg btn-edit"><i class="far fa-edit"></i></a>
-                        <a href="{% url 'delete_comment' comment.id %}" class="btn btn-signup btn-lg btn-delete" style="color: #fc0000;"><i
-                                class="fas fa-trash"></i></a>
-                                {% else %}
-                                <div class="alert alert-success" id="" role="alert">
-                                   To edit or delete your comments you need to <a class="link"
-                                    href="{% url 'account_login' %}">sign in</a>!
-                                </div>
-                                    
+                    <a href="{% url 'edit_comment' comment.id %}" class="btn btn-signup btn-lg btn-edit"><i
+                            class="far fa-edit"></i></a>
+                    <a href="{% url 'delete_comment' comment.id %}" class="btn btn-signup btn-lg btn-delete"
+                        style="color: #fc0000;"><i class="fas fa-trash"></i></a>
+                    {% else %}
+                    <div>
+                        <p>To edit/delete your comments you need to <a class="link"
+                                href="{% url 'account_login' %}">sign in</a>!</p>
+                    </div>
+
                     {% endif %}
                 </div>
                 {% endfor %}
-            </div>
-        </div>
-        <div class="col-md-8 card mb-4  mt-3 comments">
-            <div class="card-body">
-                <!--Alert-->
-                {% if commented %}
-                <div class="alert alert-success" id="msg" role="alert">
-                    Your comment is awaiting approval
-                </div>
-                {% else %}
-                {% if user.is_authenticated %}
-
-                <h3>Comment:</h3>
-                <p>Posting as: {{ user.username }}</p>
-                <form method="post" style="margin-top: 1em;">
-                    {{ comment_form | crispy }}
-                    {% csrf_token %}
-                    <button type="submit" class="btn btn-signup btn-lg">Submit</button>
-                </form>
-                {% endif %}
-                {% endif %}
             </div>
         </div>
     </div>

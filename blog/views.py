@@ -116,7 +116,7 @@ class CommentDeleteView(DeleteView):
     
     def form_valid(self, form):
         messages.success(self.request, "The task was deleted successfully.")
-        return super(CommentDeleteView,self).form_valid(form)
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
 

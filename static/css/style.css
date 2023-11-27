@@ -31,7 +31,6 @@ body {
 #id_password2,
 #id_login,
 #id_password {
- /*   margin-left: 38px;*/
     border-radius: 25px;
     padding: 20px; 
     width: 200px;
@@ -45,7 +44,6 @@ body {
 
 .card {
     border: none;
-    /* box-shadow: 2px 5px; */
     background-color: transparent;
 }
 
@@ -73,6 +71,8 @@ body {
     border-style: outset;
     border-color: lightgray;
     border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .author {
