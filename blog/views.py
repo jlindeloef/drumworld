@@ -5,6 +5,7 @@ from .models import Post, Category, Comment
 from .forms import CommentForm
 from django.views.generic import ListView
 from django.http import HttpResponseRedirect
+from django.urls import reverse_lazy
 
 
 
@@ -95,7 +96,7 @@ class CatListView(ListView):
 
 
 def category_list(request):
-    category_list = Category.objects.exclude(name='default')
+    category_list = Category.objects.all()
     context = {
         "category_list": category_list,
     }
@@ -108,15 +109,15 @@ class CommentUpdateView(UpdateView):
     template_name = "edit_comment.html"
     success_url = '/post_detail/'
 
-
+  
 class CommentDeleteView(DeleteView):
     model = Comment
     template_name = 'delete_comment.html'
     success_url = '/post_detail/'
     
     def form_valid(self, form):
-        messages.success(self.request, "The task was deleted successfully.")
-        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+        messages.success(self.request, "The comment was deleted successfully.")
+
 
 
 

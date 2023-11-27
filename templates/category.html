@@ -5,7 +5,7 @@ Catlist
 {% endblock %}
 
 {% block content %}
-
+<!--Finding categories of posts-->
 <div class="container-fluid">
     <div class="col-12 mt-3 left">
         <div class="row">
@@ -27,6 +27,7 @@ Catlist
                                 <p class="author">Author: {{ post.author }}</p>
                             </div>
                         </div>
+                        <!--View posts-->
                         <a href="{% url 'post_detail' post.slug  %}" class="post-link">
                             <h2 style="font-size:18px;font-weight:bold">{{post.title|truncatechars:50}}</h2>
                             <p class="card-text">{{post.excerpt|truncatechars:50}}</p>
@@ -35,6 +36,7 @@ Catlist
                     </div>
                 </div>
             </div>
+            <!--nuber of posts in a row-->
             {% if forloop.counter|divisibleby:4 %}
         </div>
         <div class="row">
