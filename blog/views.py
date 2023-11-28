@@ -107,16 +107,17 @@ class CommentUpdateView(UpdateView):
     model = Comment
     form_class = CommentForm
     template_name = "edit_comment.html"
-    success_url = '/post_detail/'
+
+    def get_success_url(self):
+        return reverse('post_detail', kwargs={'slug': self.object.post.slug})
 
   
 class CommentDeleteView(DeleteView):
     model = Comment
     template_name = 'delete_comment.html'
-    success_url = '/post_detail/'
     
-    def form_valid(self, form):
-        messages.success(self.request, "The comment was deleted successfully.")
+    def get_success_url(self):
+        return reverse('post_detail', kwargs={'slug': self.object.post.slug})
 
 
 
