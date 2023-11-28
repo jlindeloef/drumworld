@@ -17,8 +17,55 @@ body {
     color: black;
 }
 
+.nav-link:hover,
+.nav-link:active {
+    background-color: lightseagreen;
+    color: white;
+}
+
+.homebtn:hover,
+.homebtn:active {
+    background-color: lightseagreen;
+    color: white;
+}
+.navbar-brand:hover,
+.navbar-brand:active {
+    background-color: lightseagreen;
+    color: white;
+}
+
 .navbar-brand {
     font-size: 40px;
+}
+
+#dropdownMenuButton1 {
+    border: none;
+    font-size: 20px;
+    margin-left: 0px;
+    font-weight: bold;  
+}
+
+.dropdown-menu {
+    background-color: lightseagreen;
+    border: 1px solid;
+}
+
+.dropdown-item{
+    font-family: 'Lato', "sans-serif";
+    font-size: 15x;
+    font-weight: bold;
+}
+
+#dropdownMenuButton1:hover,
+#dropdownMenuButton1:active {
+    background-color: lightseagreen;
+    color: white;
+}
+
+.dropdown-item:hover,
+.dropdown-item:active {
+    background-color: lightseagreen;
+    color: white;
 }
 
 .main-bg {
