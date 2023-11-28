@@ -46,21 +46,24 @@
             <a class="nav-link" href="{% url 'account_login' %}">Sign In</a>
           </li>
           {% endif %}
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="/category/{{category.name}}" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          
+          <li class="dropdown show">
+            <a class="nav-link dropdown-toggle" href="" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Categories
             </a>
+            
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href=""> {{ category.name|title }}</a></li>
-              <li><a class="dropdown-item" href="#">Lessons</a></li>
-              <li><a class="dropdown-item" href="#">Guide</a></li>
+              <li><a class="dropdown-item" href="/category/news">News</a></li>
+              <li><a class="dropdown-item" href="/category/lessons">Lessons</a></li>
+              <li><a class="dropdown-item" href="/category/guide">Guide</a></li>
             </ul>
           </li>
-          <!--
+           <!--
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="" id="dropdownMenuLink" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">Categories</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               {% for category in category_list %}
               <a class="dropdown-item" href="/category/{{category.name}}">
               {{ category.name|title }}
@@ -68,7 +71,7 @@
               {% endfor %}
             </div>
           </li>
-          -->
+        -->
         </ul>
       </div>
     </div>

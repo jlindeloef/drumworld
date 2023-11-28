@@ -11,7 +11,7 @@
 		<div class="col-md-5 mt-3 offset-md-3">
 			<p class="form-buttons">
 				<input type="submit" class="btn btn-signup btn-primary" value="Delete">
-			<a href="{% url 'post_detail' comment.id %}" class="btn btn-signup btn-outline">Cancel</a>
+			<a href="{{ view.get_success_url }}" class="btn btn-signup btn-outline">Cancel</a>
 			</p>
 		</div>
 	</form>
