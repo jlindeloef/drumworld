@@ -6,7 +6,7 @@ body {
     font-weight: bold;
     font-family: 'Lato', "sans-serif";
 }
-
+/* Navbar*/
 .navbar {
     background-color: lightseagreen;
     font-size: 20px;
@@ -23,8 +23,8 @@ body {
     color: white;
 }
 
-.homebtn:hover,
-.homebtn:active {
+#homebtn:hover,
+#homebtn:active {
     background-color: lightseagreen;
     color: white;
 }
@@ -67,7 +67,7 @@ body {
     background-color: lightseagreen;
     color: white;
 }
-
+/*Body*/
 .main-bg {
     background-color: #ffffff;
 }

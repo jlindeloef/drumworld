@@ -6,6 +6,7 @@ from .forms import CommentForm
 from django.views.generic import ListView
 from django.http import HttpResponseRedirect
 from django.contrib.messages.views import SuccessMessageMixin
+from django.contrib import messages
 
 
 
@@ -119,7 +120,11 @@ class CommentDeleteView(SuccessMessageMixin, DeleteView):
     template_name = 'delete_comment.html'
     success_message = "You deleted your comment successfully"
 
-    def get_success_url(self, request):
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, self.success_message)
+        return super(CommentDeleteView, self).delete(request, *args, **kwargs)
+
+    def get_success_url(self):
         return reverse('post_detail', kwargs={'slug': self.object.post.slug})
         
 
