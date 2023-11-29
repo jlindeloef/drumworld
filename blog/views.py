@@ -5,7 +5,7 @@ from .models import Post, Category, Comment
 from .forms import CommentForm
 from django.views.generic import ListView
 from django.http import HttpResponseRedirect
-from django.urls import reverse_lazy
+from django.contrib.messages.views import SuccessMessageMixin
 
 
 
@@ -103,22 +103,25 @@ def category_list(request):
     return context
 
 
-class CommentUpdateView(UpdateView): 
+class CommentUpdateView(SuccessMessageMixin, UpdateView): 
     model = Comment
     form_class = CommentForm
     template_name = "edit_comment.html"
+    success_message = "You updated your comment successfully"
 
     def get_success_url(self):
         return reverse('post_detail', kwargs={'slug': self.object.post.slug})
 
   
-class CommentDeleteView(DeleteView):
+class CommentDeleteView(SuccessMessageMixin, DeleteView):
     model = Comment
+    form_class = CommentForm
     template_name = 'delete_comment.html'
-    
-    def get_success_url(self):
-        return reverse('post_detail', kwargs={'slug': self.object.post.slug})
+    success_message = "You deleted your comment successfully"
 
+    def get_success_url(self, request):
+        return reverse('post_detail', kwargs={'slug': self.object.post.slug})
+        
 
 
 
