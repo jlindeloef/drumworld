@@ -5,12 +5,12 @@ DrumWorld is a blog for those who are interested in drums and drumming. On the b
 **So get into the music!**
 Johan Lindelöf
 
-[Onstage Music School Website](https://jlindeloef.github.io/onstage-music-school/)
+[DrumWorld Blog](https://jlindeloef.github.io/onstage-music-school/)
 
-[Github Repository](https://github.com/jlindeloef/onstage-music-school)
+[Github Repository](https://github.com/jlindeloef/drumworld)
 
 
-![The responsive image.](https://github.com/jlindeloef/onstage-music-school/blob/main/assets/images/screenshotresponsive.jpg)
+![The responsive image.](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/On%20devices.png)
 
 ## About the website
 ### Project planning
