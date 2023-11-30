@@ -19,10 +19,12 @@ I notice around my fellow musicians that it would be great to have a blog about 
 This is my first blog creation so first I needed to look at different blogs both of how to code and what I wanted in my blog. I looked at youtube and looked through some code I could find on the internet that matches what I wanted. I also brought with me knowledge from my diploma course in coding. I wanted an easy blog with posts regarding everything about drumming, so catalyzing the posts into different categories is a must so it's easy for the user to maneuver through. 
 
 I have used Balsamiq to plan how the blog should look like. I did it with a very easy layout because I didn't know when I started how easy or hard my decisions would be to code the blog
-Here is my rough plan: [Onstage Music School](https://github.com/jlindeloef/onstage-music-school/blob/main/assets/images/Onstage%20music%20school.pdf)
+Here is my rough plan: [Drumworld wireframe](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/Drumworld%20wireframe.pdf)
 
 To create and plan the structure of the blog I made a flowchart which takes me through the game and helps me with the coding. It shows the logic path throughout the game
 and can help you when you read this readme.
+
+![Flowchart](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/logic%20chart.drawio.png)
 
 
 ### UX
@@ -82,41 +84,101 @@ I have divided the feature section into two parts. What features depend on if yo
   **or**
 - Logged in
 
-#### ***When logged out:***
+### ***When logged out:***
 + #### Navigation Bar
+![Navbar logged out](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/navbar%20kogged%20out.png)
   - **DrumWorld/Home:** The navigation bar will view a title of the blog “DrumWorld” and a “Home”- link. Both of these are links to the home page from wherever you are on the webpage.
   - **Sign Up:** For the user to sign up to get access to the whole blog content.
   - **Sign in:** For the user to log in and get access to the whole blog.
+
+![Sign up](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/Signup.png)![](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/signin.png)
+  
+
 Both "Sign Up" and "Sign In" will give a message if it succed or not.
+
 
 + #### Main page
   - Here the user finds the posts. The user can click on the post to be redirected to the whole post content and only read.
   - Every published post has an image, author of the post and when published.
   - Recent published post displays as the first post.
-
+  
+ ![A post](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/apost.png)
 + #### Footer
   - In the footer users find links to our social media.
+ 
+![Footer](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/The%20footer.png)
 
-#### ***When logged in:***
+### ***When logged in:***
 + #### Navigation Bar
+![Navbar logged in](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/navbar%20logged%20in.png)
   - **DrumWorld/Home:** The navigation bar will view a title of the blog “DrumWorld” and a “Home”- link. Both of these are links to the home page from wherever you are on the webpage.
-  - **Log Out:** **Log Out:** When the user wants to log out from the blog. The user will be redirected to a new page where user confims logging out.
+  - **Log Out:** When the user wants to log out from the blog. The user will be redirected to a new page where user confims logging out.
+    ![Log out](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/logout.png)
   - **Categories:** The user can through the dropdown menu choose from different categories that the user wants to display. When the choice is made, only the posts in that category will view.
+    ![Category dropdown](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/navbar-category-dropdown.png)
 
 + #### Main page
 except what the user can do when logged out, the user can:
-  - Create a comment that will display after approval from the admin.
-  - The user can like a comment with the like-button under the post.
+  - The user can like a post with the like-button under the post.
+    
+![Like](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/Liked.png)
+  - Create a comment that will display after approval from the admin. An alert will tell the user that admin needs to approve the comment.
+    ![Commentfield](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/commentfield.png)
+    ![Comments made](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/Comments%20made.png)  
   - The user can edit and delete their own comment.
+
+    ![Edit/delete](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/Deleteedit.png)
   - When editing a comment the user will be redirected to a page where the user can update the comment.
+    ![Edit](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/Edit.png)
   - When the user wants to delete a comment the user will be redirected to a page where the user can confirm the deletion or cancel.
+![Delete](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/Delete.png)
 
 
 + #### Footer
-  - In the footer users find links to our social media.
+  - The footer is the same as when logged out. It contains links to social media.
 
 
 ### Features to Implement
 Further there could be an about Us page and a direct contact to the admin. Also maybe create modals for sign in, sign up, log out, for edit/delete comment.
+
+## Testing
++ I tested the site, and it works in different web browsers: Chrome, Firefox, and Microsoft Edge.
++ On mobile devices, I tested the quiz on a Samsung Galaxy A13 with the Samsung browser and an iPhone SE with the Safari browser.
++ I confirmed that the site is responsive and functions on different screen sizes using the devtools device toolbar.
++ I confirmed that the quiz, start, playground and scoreboard are readable and easy to understand.
+
+### Validator Testing
++ HTML No errors were returned when passing through the official W3C validator.
++ CSS No errors were found when passing through the official (Jigsaw) validator.
++ Javascript No errors were found when passing through JSHint validator.
+
+### Testing using Google Lighthouse:
+I used Google Lighthouse via devtools to assess the website.
+
+![Lighthouse](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/Lighthouse.png)
+
+  ### Bugs
++ Solved bugs
+  - The "Next"-button did`nt want to change function in scorebord to "Reset", so I made a new button that hasthat function.
++ Unsolved bugs
+  - No unsolved bugs.
+
+   ## Deployment
++ The site was deployed to Git Hub pages using the following steps:
++ After logging into GitHub I located my repository for my Portfolio Project 2.
++ I then clicked the "Settings" button at the top of my repository
++ Under General, navigate to Code and Automation and select "Pages".
++ In the Build and Deployment section for Source, select 'Deploy from a branch' from the drop-down list.
++ For Branch, select "main" from the drop-down list and "/root" in the next bar and Save.
++ On the top of the page, the link to the complete website is provided.
++ The deployed site will update automatically upon new commits to the master branch.
+
+  ## Credits
+**Code:** Some code parts were taken from W3Schools (https://www.w3schools.com/), Stack Overflow (https://stackoverflow.com/) modified for the purpose of my website. 
+Some code used in "Love Maths" and "Love Running Challenge" was used and changed for my quiz. The questions were mainly from funtrivia.com (https://www.funtrivia.com/en/Geography/Sweden-3858.html).
+
+### Acknowledgements
+My mentor Medale Oluwafemi for guidance and inspiration and reviewing.
+The questions were mainly from funtrivia.com (https://www.funtrivia.com/en/Geography/Sweden-3858.html).
 
 
