@@ -19,15 +19,12 @@
                                 {% else %}
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="Card image cap">
                                 {% endif %}
-                                <div class="image-flash">
-                                    <p class="author">Author: {{ post.author }}</p>
-                                </div>
                             </div>
                             <a href="{% url 'post_detail' post.slug  %}" class="post-link">
-                                <h2 style="font-size:18px;font-weight:bold">{{post.title|truncatechars:50}}</h2>
-                                <p class="card-text">{{post.excerpt|truncatechars:50}}</p>
+                                <h2 style="font-size:18px;font-weight:bold">{{post.title|truncatechars:55}}</h2>
+                                <p class="card-text">{{post.excerpt|truncatechars:55}}</p>
                             </a>
-                            <p class="card-text text-muted h6">{{ post.created_on}}</p>
+                            <p class="card-text text-muted h6">Author: {{ post.author }}<br>{{ post.created_on}}</p>
                         </div>
                     </div>
                 </div>

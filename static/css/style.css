@@ -7,6 +7,7 @@ body {
     font-family: 'Lato', "sans-serif";
 }
 /* Navbar*/
+
 .navbar {
     background-color: lightseagreen;
     font-size: 20px;
@@ -67,10 +68,23 @@ body {
     background-color: lightseagreen;
     color: white;
 }
+
 /*Body*/
+
 .main-bg {
     background-color: #ffffff;
 }
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.card-img-top {
+    height: 300px;
+}
+
+/*Sign up*/
 
 #id_username,
 #id_password1,
@@ -89,72 +103,19 @@ body {
     font-size: 12px;
 }
 
-.card {
-    border: none;
-    background-color: transparent;
-}
-
-.card-img-top {
-    height: 300px;
-}
-
 .image-container {
     position: relative;
 }
 
-.image-flash {
-    position: absolute;
-    top: 0%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #000000;
+textarea {
+    border: 2px solid #000000;
+    border-radius: 15px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    height: 100px;
 }
 
-.comments {
-    border: none;
-}
-
-.comments-done {
-    border-style: outset;
-    border-color: lightgray;
-    border-radius: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.author {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
-}
-
-.footer {
-    background-color: lightseagreen;
-}
-
-#visit-us {
-    font-family: 'lato', sans-serif;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
-
-#social-networks {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin-top: 15px;
-    margin-bottom: 0px;
-}
-
-#social-networks i {
-    font-size: 150%;
-    padding: 2%;
-    color: black;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+/*Posts*/
 
 .masthead {
     margin-top: 10px;
@@ -186,20 +147,6 @@ body {
     background: lightseagreen;
 }
 
-.comments {
-    box-shadow: none;
-}
-
-.post-link {
-    text-decoration: none;
-    color: #000000;
-}
-
-.post-link:hover,
-.page-link {
-    color: lightseagreen;
-}
-
 .post-title {
     margin-top: 20%;
     margin-left: 5%;
@@ -222,6 +169,52 @@ body {
     visibility: hidden;
 }
 
+/*Comments*/
+
+.comments-done {
+    border-style: outset;
+    border-color: lightgray;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hidebody {
+    color:#ffffff;   
+}
+
+/*Footer*/
+
+.footer {
+    background-color: lightseagreen;
+}
+
+#visit-us {
+    font-family: 'lato', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#social-networks {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+#social-networks i {
+    font-size: 150%;
+    padding: 2%;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Buttons*/
+
 .btn {
     background-color: lightseagreen;
     color: #000000;
@@ -240,6 +233,7 @@ body {
     margin-top: 0px;
 }
 
+/*Delete button*/
 .btn-primary:hover,
 .btn-primary:active {
     background-color: black;
@@ -256,10 +250,20 @@ body {
     background-color: black;
     color: white;
 }
-
+/*Link home post*/
 .link {
     color: lightseagreen;
     text-decoration: none;
+}
+
+.post-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.post-link:hover,
+.page-link {
+    color: lightseagreen;
 }
 
 .link:hover,
@@ -281,13 +285,12 @@ body {
     border: none;
 }
 
-.hidebody {
-    color:#ffffff;   
+.btn_comment {
+    font-size:medium;
 }
 
-textarea {
-    border: 2px solid #000000;
-    border-radius: 15px;
-    background-color: #f8f8f8;
-    font-size: 16px;
+#social-networks i:hover,
+#social-networks i:active {
+    background-color: lightseagreen;
+    color: white;
 }
