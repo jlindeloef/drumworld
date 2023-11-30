@@ -173,7 +173,7 @@ textarea {
 
 .comments-done {
     border-style: outset;
-    border-color: lightgray;
+    border-color: #d3d3d3;
     border-radius: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -223,6 +223,13 @@ textarea {
     margin-left: 15%;
 }
 
+.nextbtn {
+    background-color: white;
+    color: #000000;
+    border: solid;
+    margin-top: 2%;
+}
+
 .btn-edit,
 .btn-delete {
     border: none;
@@ -245,6 +252,8 @@ textarea {
     margin-bottom: 15px;
 }
 
+.nextbtn:hover,
+.nextbtn:active,
 .btn-signup:hover,
 .btn-signup:active {
     background-color: black;
