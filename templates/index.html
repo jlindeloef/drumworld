@@ -17,7 +17,7 @@
                                 <img class="card-img-top"
                                     src="https://images.pexels.com/photos/237464/pexels-photo-237464.jpeg?auto=compress&cs=tinysrgb&w=1600">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="Card image cap">
+                                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="DrumWorld">
                                 {% endif %}
                             </div>
                             <a href="{% url 'post_detail' post.slug  %}" class="post-link">

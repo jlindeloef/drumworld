@@ -39,18 +39,19 @@
           <li class="nav-item">
             <a class="nav-link" href="{% url 'account_logout' %}">Log Out</a>
           </li>
-           <!--Categories dropdown list-->
-          
-           <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <!--Categories dropdown list-->
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Categories
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               {% for category in category_list %}
               <li><a class="dropdown-item" href="/category/{{ category.name}}">
-              {{ category.name|title }}
-              </a></li>
-            {% endfor %}
+                  {{ category.name|title }}
+                </a></li>
+              {% endfor %}
             </ul>
           </div>
           {% else %}
@@ -124,7 +125,7 @@
         }, 6000);
       </script>
       <!--Font awesome-->
-      
+
       <script src="https://kit.fontawesome.com/4e7d3fc856.js" crossorigin="anonymous"></script>
 </body>
 
