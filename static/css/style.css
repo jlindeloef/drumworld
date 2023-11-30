@@ -226,8 +226,9 @@ textarea {
 .nextbtn {
     background-color: white;
     color: #000000;
-    border: solid;
+    border: solid black;
     margin-top: 2%;
+    border-radius: 25px;
 }
 
 .btn-edit,
