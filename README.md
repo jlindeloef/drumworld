@@ -142,6 +142,7 @@ except what the user can do when logged out, the user can:
 Further there could be an about Us page and a direct contact to the admin. Also maybe create modals for sign in, sign up, log out, for edit/delete comment.
 
 ## Testing
+If you want to know more about my testing you can click [here.](https://github.com/jlindeloef/drumworld/blob/main/Testing.md)
 + I tested the site, and it works in different web browsers: Chrome, Firefox, and Microsoft Edge.
 + On mobile devices, I tested the quiz on a Samsung Galaxy A13 with the Samsung browser and an iPhone SE with the Safari browser.
 + I confirmed that the site is responsive and functions on different screen sizes using the devtools device toolbar.
