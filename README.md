@@ -159,13 +159,27 @@ I used Google Lighthouse via devtools to assess the website.
 
   ### Bugs
 + Solved bugs
-  - The "Next"-button did`nt want to change function in scorebord to "Reset", so I made a new button that hasthat function.
+  - The category dropdown menu in the navbar didn´t work.
+  - The Edit and Delete confirmation buttons did not redirect to the postsite when pressing.
+  - The CSS did not view when deployed.
+  All these bugs are fixed with help from the tutors at Code Institute. 
 + Unsolved bugs
   - No unsolved bugs.
 
    ## Deployment
-+ The site was deployed to Git Hub pages using the following steps:
-+ After logging into GitHub I located my repository for my Portfolio Project 2.
+I followed the steps written below to deploy my project to Heroku:
+ + First created a Heroku account by flollowing the instructions given from Code Institute.
+ + "Create new App".
+ + Give the App an unique name and enter region europe.
+ + Click on "Create App".
+ + Go to Deploy section tab and scroll down to the Deployment Method.I connect to Github pages and then could search for my Github Repository "DrumWorld" and then click connect.
+ + Scroll down to Automatic and Manual Deploys sections. I clicked on Manual Deployment.
+ + Deploy Branch.
+ + After the project has been deployed successfully I clicked the View-button to see the program run in the terminal.
+
+In github:
+The site was deployed to Git Hub pages using the following steps:
++ After logging into GitHub I located my repository for my Portfolio Project 4.
 + I then clicked the "Settings" button at the top of my repository
 + Under General, navigate to Code and Automation and select "Pages".
 + In the Build and Deployment section for Source, select 'Deploy from a branch' from the drop-down list.
@@ -175,10 +189,9 @@ I used Google Lighthouse via devtools to assess the website.
 
   ## Credits
 **Code:** Some code parts were taken from W3Schools (https://www.w3schools.com/), Stack Overflow (https://stackoverflow.com/) modified for the purpose of my website. 
-Some code used in "Love Maths" and "Love Running Challenge" was used and changed for my quiz. The questions were mainly from funtrivia.com (https://www.funtrivia.com/en/Geography/Sweden-3858.html).
+Code used in "I Think Therefore I Blog" was used and changed for creating my blog.
 
 ### Acknowledgements
-My mentor Medale Oluwafemi for guidance and inspiration and reviewing.
-The questions were mainly from funtrivia.com (https://www.funtrivia.com/en/Geography/Sweden-3858.html).
-
+My mentor Medale Oluwafemi for guidance and inspiration and reviewing. Also a great thanks to Code Institutes tutors and Student support Who has been a great help during this project:
+Ideas were taken from The Code Institute's "I Think Therefore I Blog".
 
