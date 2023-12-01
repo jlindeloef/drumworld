@@ -3,16 +3,19 @@
 ## Automated testing ##
 | Page | Screenshot | Notes |
 | --- | --- | --- |
+| CSS | |  |  |
 | CSS | ![CSS](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/CSS%20Valid.png) | Pass |
-| base.html | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
-| index.html | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
-| post_detail.html | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
-| edit_comment.html | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
-| delete_comment.html | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
-| signup.html | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
-| signin.html | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
-| logout.html | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
-| category.html | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
+|HTML | |  |  |
+| base.html and index.html | ![base,index](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/base.html%20and%20index.html.png) | Pass |
+| post_detail.html | ![](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/post_detail%20html%20validation.png) | Pass |
+| edit_comment.html | ![Edit](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/edit%20comment%20validation.png) | Pass |
+| delete_comment.html | ![](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/delete%20comment%20validation.png) | Pass |
+| signup.html | ![](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/Sign%20up%20validation.png) | Pass |
+| signin.html | ![sign in](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/Signin%20html%20validaded.png) | Pass |
+| logout.html | ![log out](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/log%20out%20html%20validation.png) | Pass |
+| category.html | ![category](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/category%20validation.png) | Pass |
+|Javascript | |  |  |
+| Javascript views current year | ![Javascript](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/javascript.png) | Pass |
 
 ## Manual testing ##
 Full testing was made on the following devices:
