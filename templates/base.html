@@ -1,7 +1,6 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html class="h-100">
 <html lang="en">
     
 
@@ -42,7 +41,7 @@
                     </li>
                     <!--Categories dropdown list-->
 
-                    <div class="dropdown">
+                    <li class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Categories
@@ -54,7 +53,7 @@
                                 </a></li>
                             {% endfor %}
                         </ul>
-                    </div>
+                    </li>
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
@@ -95,9 +94,9 @@
         <div class="container">
 
             <ul id="social-networks">
-                <div id="visit-us">
+                <li id="visit-us">
                     <p>Visit Us:</p>
-                </div>
+                </li>
                 <li>
                     <a href="https://www.facebook.com/" target="_blank" rel="noopener"
                         aria-label="Visit Onstage Facebook page (opens in a new tab)">
@@ -115,8 +114,7 @@
                         <i class="fa-brands fa-youtube"></i></a>
                 </li>
             </ul>
-            <div>
-            </div>
+        </div>
             <!--Alert messages-->
             <script>
                 setTimeout(function () {
