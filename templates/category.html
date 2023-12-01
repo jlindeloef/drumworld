@@ -19,7 +19,7 @@ Catlist
                         <div class="image-container">
                             {% if "placeholder" in post.featured_image.url %}
                             <img class="card-img-top"
-                                src="https://images.pexels.com/photos/237464/pexels-photo-237464.jpeg?auto=compress&cs=tinysrgb&w=1600">
+                                src="https://images.pexels.com/photos/237464/pexels-photo-237464.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Drumworld">
                             {% else %}
                             <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="Card image cap">
                             {% endif %}
