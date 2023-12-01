@@ -1,6 +1,21 @@
-# Testing #
+# DrumWorld Testing #
+![The responsive image.](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/On%20devices.png)
+
+[Visit the DrumWorld Blog](https://drumworld-9b0612a3caf4.herokuapp.com/)
 
 ## Automated testing ##
+I used the W3C validator for automated testing of:
+- HTML
+- CSS
+  
+I used jshint for testing of:
+- Javascript
+  
+And CI python Linter to validate:
+- Python
+
+**Here are my results:**
+
 | Page | Screenshot | Notes |
 | --- | --- | --- |
 | CSS | |  |  |
@@ -16,7 +31,16 @@
 | category.html | ![category](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/category%20validation.png) | Pass |
 |Javascript | |  |  |
 | Javascript views current year | ![Javascript](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/javascript.png) | Pass |
+|Python | |  |  |
+| Models.py | ![](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/Models.py%20validation.png) | Gave varning of "continuation over-indented for visual indent" |
+| views.py | ![](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/views.py%20validation.png) |  Gave varning of "continuation over-indented for visual indent" |
+| admin.py | ![](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/admin.py%20validation.png)| Pass |
 
+### Testing using Google Lighthouse:
+I used Google Lighthouse via devtools to assess the website.
+
+![lighthouse](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/Lighthouse.png)
+ 
 ## Manual testing ##
 Full testing was made on the following devices:
 
@@ -29,16 +53,20 @@ Full testing was made on the following devices:
 ### Testing userstories ###
 | Goals | How are they achieved? | images |
 | --- | --- | --- |
-| CSS | ![CSS](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/CSS%20Valid.png) | Pass |
-| base.html | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
-| index.html | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
-| post_detail.html | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
-| edit_comment.html | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
-| delete_comment.html | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
-| signup.html | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
-| signin.html | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
-| logout.html | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
-| category.html | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
+| **First time user**| |  |  |
+| Understand what the blog is for and how to navigate the website | The posts are on the main page and is the first thing you see when enter the blog. |:-- |
+| Register for an account. | A register link is displayed on the navbar if a user wants to sign up. | :-- |
+| **Returning user**| |  |  |
+| Log in | 	If a user is not logged in, a login link is provided on the navbar. | :-- |
+| Choose category | If user want to choose a category there is a dropdown link in the navbar. | :-- |
+| Add a comment | When logged in the comment view display and the user can add a comment. | :-- |
+| edit a comment | When published a comment the user can edit it through the edit icon. | :--
+| delete a comment | When published a comment the user can delete it through the delete icon. | :--
+| Like a post | When logged in the user can like/unlike a post. | :--|
+| logout | If user want to log out there is a log out link in the navbar. | :-- |
+| **Admin**| |  |  |
+| Remove any offensive comments | Due to time constraints, when commenting the user awaits for approval but there is no approval after editing. |:-- |
+
 
 ### Full testing ###
 
