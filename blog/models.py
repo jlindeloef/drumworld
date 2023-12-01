@@ -5,13 +5,14 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
+
 class Category(models.Model):
     name = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
-        
-        
+
+
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -27,7 +28,6 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(
         User, related_name='blogpost_like', blank=True)
-    
 
     class Meta:
         ordering = ["-created_on"]
@@ -40,7 +40,8 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
-    writer = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True, related_name="user_comment")
+    writer = models.ForeignKey(User, on_delete=models.CASCADE, null=True,
+                                blank=True, related_name="user_comment")
     post = models.ForeignKey(Post, on_delete=models.CASCADE,
                              related_name="comments")
     name = models.CharField(max_length=80)
@@ -54,7 +55,4 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
-
-
-
 

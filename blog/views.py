@@ -9,7 +9,6 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib import messages
 
 
-
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
@@ -36,9 +35,9 @@ class PostDetail(View):
                 "commented": False,
                 "liked": liked,
                 "comment_form": CommentForm()
-            }, 
+            },
         )
-    
+
     def post(self, request, slug, *args, **kwargs):
 
         queryset = Post.objects.filter(status=1)
@@ -72,7 +71,7 @@ class PostDetail(View):
 
 
 class PostLike(View):
-    
+
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
         if post.likes.filter(id=request.user.id).exists():
@@ -83,7 +82,6 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-
 class CatListView(ListView):
     template_name = 'category.html'
     context_object_name = 'catlist'
@@ -91,7 +89,8 @@ class CatListView(ListView):
     def get_queryset(self):
         content = {
             'cat': self.kwargs['category'],
-            'posts': Post.objects.filter(category__name=self.kwargs['category']).filter(status='1')
+            'posts': Post.objects.filter(category__name=self.kwargs
+                                        ['category']).filter(status='1')
         }
         return content
 
@@ -104,7 +103,7 @@ def category_list(request):
     return context
 
 
-class CommentUpdateView(SuccessMessageMixin, UpdateView): 
+class CommentUpdateView(SuccessMessageMixin, UpdateView):
     model = Comment
     form_class = CommentForm
     template_name = "edit_comment.html"
@@ -113,7 +112,7 @@ class CommentUpdateView(SuccessMessageMixin, UpdateView):
     def get_success_url(self):
         return reverse('post_detail', kwargs={'slug': self.object.post.slug})
 
-  
+
 class CommentDeleteView(SuccessMessageMixin, DeleteView):
     model = Comment
     form_class = CommentForm
