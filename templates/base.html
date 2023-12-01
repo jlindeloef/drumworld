@@ -95,7 +95,7 @@
 
             <ul id="social-networks">
                 <li id="visit-us">
-                    <p>Visit Us:</p>
+                     <p>©<span id="cyear"></span></p>
                 </li>
                 <li>
                     <a href="https://www.facebook.com/" target="_blank" rel="noopener"
@@ -116,6 +116,18 @@
             </ul>
         </div>
     </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        
+    /*Views current year in footer*/
+    window.addEventListener('load', () => {
+        const year = document.getElementById('cyear');
+        year.innerHTML = new Date().getFullYear();
+    });
+
+    </script>
+      
             <!--Alert messages-->
             <script>
                 setTimeout(function () {
