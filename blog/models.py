@@ -5,14 +5,18 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
-
+"""
+The category model
+"""
 class Category(models.Model):
     name = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
 
-
+"""
+The post model
+"""
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -38,7 +42,9 @@ class Post(models.Model):
     def number_of_likes(self):
         return self.likes.count()
 
-
+"""
+The comment model
+"""
 class Comment(models.Model):
     writer = models.ForeignKey(User, on_delete=models.CASCADE, null=True,
                                 blank=True, related_name="user_comment")

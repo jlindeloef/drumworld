@@ -8,14 +8,18 @@ from django.http import HttpResponseRedirect
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib import messages
 
-
+"""
+The created posts
+"""
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "index.html"
     paginate_by = 6
 
-
+"""
+The comment and likes and info of post
+"""
 class PostDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
@@ -69,7 +73,9 @@ class PostDetail(View):
             },
         )
 
-
+"""
+The like function
+"""
 class PostLike(View):
 
     def post(self, request, slug, *args, **kwargs):
@@ -81,7 +87,9 @@ class PostLike(View):
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
-
+"""
+The categories
+"""
 class CatListView(ListView):
     template_name = 'category.html'
     context_object_name = 'catlist'
@@ -102,7 +110,9 @@ def category_list(request):
     }
     return context
 
-
+"""
+The edit omment view
+"""
 class CommentUpdateView(SuccessMessageMixin, UpdateView):
     model = Comment
     form_class = CommentForm
@@ -112,7 +122,9 @@ class CommentUpdateView(SuccessMessageMixin, UpdateView):
     def get_success_url(self):
         return reverse('post_detail', kwargs={'slug': self.object.post.slug})
 
-
+"""
+The delete comment view
+"""
 class CommentDeleteView(SuccessMessageMixin, DeleteView):
     model = Comment
     form_class = CommentForm

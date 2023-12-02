@@ -99,17 +99,18 @@
                     <div class="col-md-2 card mb-0  mt-0">
                     <hr>
                     </div>
-                    {% if request.user == post.author %}
+                    {% if request.user == comment.writer %}
                     <a href="{% url 'edit_comment' comment.id %}" class="btn btn-signup btn-lg btn-edit"><i
                             class="far fa-edit"></i></a>
                     <a href="{% url 'delete_comment' comment.id %}" class="btn btn-signup btn-lg btn-delete"
                         style="color: #fc0000;"><i class="fas fa-trash"></i></a>
                         {% else %}
-                    <a  class="btn btn-signup btn-lg btn-edit" style="color: grey"><i
-                            class="far fa-edit"></i></a>
-                    <a  class="btn btn-signup btn-lg btn-delete"
-                        style="color: grey;"><i class="fas fa-trash"></i></a>
+                    <div>
+                        <p>To edit/delete your comments you need to <a class="link"
+                                href="{% url 'account_login' %}">sign in</a>!</p>
+                    </div>
                     {% endif %}
+                </div>
                 {% endfor %}
             </div>
         </div>
