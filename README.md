@@ -5,7 +5,7 @@ DrumWorld is a blog for those who are interested in drums and drumming. On the b
 **So get into the music!**
 Johan Lindelöf
 
-[DrumWorld Blog]((https://drumworld-9b0612a3caf4.herokuapp.com/))
+[DrumWorld Blog](https://drumworld-9b0612a3caf4.herokuapp.com/)
 
 [Github Repository](https://github.com/jlindeloef/drumworld)
 
