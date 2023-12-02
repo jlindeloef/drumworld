@@ -5,7 +5,7 @@ DrumWorld is a blog for those who are interested in drums and drumming. On the b
 **So get into the music!**
 Johan Lindelöf
 
-[DrumWorld Blog](https://jlindeloef.github.io/onstage-music-school/)
+[DrumWorld Blog]((https://drumworld-9b0612a3caf4.herokuapp.com/))
 
 [Github Repository](https://github.com/jlindeloef/drumworld)
 
@@ -142,21 +142,17 @@ except what the user can do when logged out, the user can:
 Further there could be an about Us page and a direct contact to the admin. Also maybe create modals for sign in, sign up, log out, for edit/delete comment.
 
 ## Testing
-If you want to know more about my testing you can click [here.](https://github.com/jlindeloef/drumworld/blob/main/Testing.md)
+If you want to know more about my automated and manualy testing you can click [here.](https://github.com/jlindeloef/drumworld/blob/main/Testing.md)
 + I tested the site, and it works in different web browsers: Chrome, Firefox, and Microsoft Edge.
-+ On mobile devices, I tested the quiz on a Samsung Galaxy A13 with the Samsung browser and an iPhone SE with the Safari browser.
++ On mobile devices, I tested the blog on a Samsung Galaxy A13 with the Samsung browser and an iPhone SE with the Safari browser.
 + I confirmed that the site is responsive and functions on different screen sizes using the devtools device toolbar.
-+ I confirmed that the quiz, start, playground and scoreboard are readable and easy to understand.
++ I confirmed that the blog readable and easy to understand.
 
 ### Validator Testing
 + HTML No errors were returned when passing through the official W3C validator.
 + CSS No errors were found when passing through the official (Jigsaw) validator.
 + Javascript No errors were found when passing through JSHint validator.
-
-### Testing using Google Lighthouse:
-I used Google Lighthouse via devtools to assess the website.
-
-![Lighthouse](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/Lighthouse.png)
++ Python showed the same warning in two of the files which doesn´t effect the blog.
 
   ### Bugs
 + Solved bugs
