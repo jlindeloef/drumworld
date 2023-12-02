@@ -2,6 +2,8 @@
 {% block content %}
 {% load crispy_forms_tags %}
 <!--Edit comment-->
+{% if user.is_authenticated %}
+{% if request.user == comment.writer %}
 <div class="container">
     <div class="col-md-5 mt-3 offset-md-3" style="text-align: center;">
         <h3>Edit your comment:</h3>
@@ -16,5 +18,10 @@
         </div>
     </div>
 </div>
-
+{% else %}
+<h1>This is not your comment!</h1>
+{% endif %}
+{% else %}
+<h1 >This is not your comment!</h1>
+{% endif %}
 {% endblock %}
