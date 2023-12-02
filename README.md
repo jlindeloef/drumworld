@@ -19,10 +19,10 @@ I notice around my fellow musicians that it would be great to have a blog about 
 
 This is my first blog creation so first I needed to look at different blogs both of how to code and what I wanted in my blog. I looked at youtube and looked through some code I could find on the internet that matches what I wanted. I also brought with me knowledge from my diploma course in coding. I wanted an easy blog with posts regarding everything about drumming, so catalyzing the posts into different categories is a must so it's easy for the user to maneuver through. 
 
-I have used Balsamiq to plan how the blog should look like. I did it with a very easy layout because I didn't know when I started how easy or hard my decisions would be to code the blog
+I have used Balsamiq to plan how the blog should look like. I did  a very easy layout because I didn't know when I started how easy or hard my decisions would be to code the blog.
 Here is my rough plan: [Drumworld wireframe](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/Drumworld-wireframe.png)
 
-To create and plan the structure of the blog I made a flowchart which takes me through the game and helps me with the coding. It shows the logic path throughout the game
+To create and plan the structure of the blog I made a flowchart which takes me through the site and helps me with the coding. It shows what the user gets when visiting the blog
 and can help you when you read this readme.
 
 ![Flowchart](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/logic%20chart.drawio.png)
@@ -81,6 +81,7 @@ I want to give the user a blog where they can find relevant content regarding dr
 ### Existing Features
 I have divided the feature section into two parts. What features depend on if you are:
 - Logged out
+  
   **or**
 - Logged in
 
@@ -191,5 +192,5 @@ Code used in "I Think Therefore I Blog" was used and changed for creating my blo
 
 ### Acknowledgements
 My mentor Medale Oluwafemi for guidance and inspiration and reviewing. Also a great thanks to Code Institutes tutors and Student support Who has been a great help during this project:
-Ideas were taken from The Code Institute's "I Think Therefore I Blog".
+Ideas and inspiration were taken from The Code Institute's "I Think Therefore I Blog".
 
