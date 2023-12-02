@@ -8,6 +8,7 @@
                 <!-- Post title-->
                 <h1 class="post-title">{{ post.title }}</h1>
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
+                
             </div>
             <div class="d-none d-md-block col-md-8 masthead-image">
                 <!-- Image -->
@@ -87,7 +88,8 @@
         <div class="col-md-12 card mb-4  mt-3" class="comments">
             <h3>Comments:</h3>
             <div class="card-body">
-                {% for comment in comments %}
+                {% for comment in comments %}                
+                {{ comment.writer }}
                 <div class="comments-done" style="padding: 10px;">
                     <p class="font-weight-bold">
                         {{ comment.name }}
@@ -99,6 +101,7 @@
                     <div class="col-md-2 card mb-0  mt-0">
                     <hr>
                     </div>
+                    
                     {% if request.user == comment.writer %}
                     <a href="{% url 'edit_comment' comment.id %}" class="btn btn-signup btn-lg btn-edit"><i
                             class="far fa-edit"></i></a>
