@@ -100,7 +100,7 @@
                     <div class="col-md-2 card mb-0  mt-0">
                     <hr>
                     </div>
-                    
+                    <!--Edit and delete icons-->
                     {% if request.user == comment.writer %}
                     <a href="{% url 'edit_comment' comment.id %}" class="btn btn-signup btn-lg btn-edit"><i
                             class="far fa-edit"></i></a>
