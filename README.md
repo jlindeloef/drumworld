@@ -3,6 +3,7 @@
 DrumWorld is a blog for those who are interested in drums and drumming. On the blog the user will find news from the drumworld, lessons or where to get them, and guidance through material within drumming and best in test materials.
 
 **So get into the music!**
+
 Johan Lindelöf
 
 [DrumWorld Blog](https://drumworld-9b0612a3caf4.herokuapp.com/)
