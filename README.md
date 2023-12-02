@@ -19,7 +19,7 @@ I notice around my fellow musicians that it would be great to have a blog about 
 This is my first blog creation so first I needed to look at different blogs both of how to code and what I wanted in my blog. I looked at youtube and looked through some code I could find on the internet that matches what I wanted. I also brought with me knowledge from my diploma course in coding. I wanted an easy blog with posts regarding everything about drumming, so catalyzing the posts into different categories is a must so it's easy for the user to maneuver through. 
 
 I have used Balsamiq to plan how the blog should look like. I did it with a very easy layout because I didn't know when I started how easy or hard my decisions would be to code the blog
-Here is my rough plan: [Drumworld wireframe](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/Drumworld%20wireframe.pdf)
+Here is my rough plan: [Drumworld wireframe](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/Drumworld-wireframe.png)
 
 To create and plan the structure of the blog I made a flowchart which takes me through the game and helps me with the coding. It shows the logic path throughout the game
 and can help you when you read this readme.
@@ -57,7 +57,6 @@ I want to give the user a blog where they can find relevant content regarding dr
 ### Colours
  **Background:** I decided to use white background with lightseagreen to the navigation bar and footer. The lightseagreen will also be used on buttons and links. The text is in black and in the navbar and footer turns white when hovering over them. The function buttons are with a lightseagreen with black text and most of them turn white with black background when hovering over. The delete icon is red and gets a black background when hovering over. Also the delete button gets a red border when hovering over. Both the delete functions contain red to get a sense of a warning. The links are in black text and turn lightseagreen when hovering over it.
 
-**The colors used was:**
 **The colors used was:**
 + Lightseagreen #20b2aa - For navigation bar,footer and buttons.
 + Blue #10a4e8 - Like button.
@@ -158,6 +157,7 @@ If you want to know more about my automated and manualy testing you can click [h
 + Solved bugs
   - The category dropdown menu in the navbar didn´t work.
   - The Edit and Delete confirmation buttons did not redirect to the postsite when pressing.
+  - The Edit and Delete icons did not work individual for the comment writer.
   - The CSS did not view when deployed.
   All these bugs are fixed with help from the tutors at Code Institute. 
 + Unsolved bugs
