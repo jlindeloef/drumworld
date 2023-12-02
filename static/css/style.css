@@ -189,6 +189,10 @@ textarea {
     background-color: lightseagreen;
 }
 
+#cyear {
+    color:#000000
+}
+
 #visit-us {
     font-family: 'lato', sans-serif;
     font-size: 20px;
