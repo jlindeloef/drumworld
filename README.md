@@ -106,7 +106,7 @@ Both "Sign Up" and "Sign In" will give a message if it succed or not.
 + #### Footer
   - In the footer users find links to our social media.
  
-![Footer](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/The%20footer.png)
+![Footer](https://github.com/jlindeloef/drumworld/blob/main/static/images/images_readme/footer.png)
 
 ### ***When logged in:***
 + #### Navigation Bar
